@@ -21,10 +21,8 @@ const tutorials = [
 // }
 
 
-const titleCased = () => {
-  return tutorials.map(sentences => {
-    return sentences.split(' ').map(word => {
-      return word.charAt(0).toUpperCase() + word.slice(1)
-    }).join(' ')
-  })
-}
+const titleCased = () =>
+  tutorials.map(sentences => 
+    sentences.split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
+  )
